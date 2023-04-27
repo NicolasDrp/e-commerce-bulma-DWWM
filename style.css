@@ -1,0 +1,6 @@
+a::after{
+    border-color: white !important;
+}
+nav .navbar-item:hover, nav .navbar-link:hover {
+    color: #4a4a4a !important;
+  }
