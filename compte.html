@@ -11,7 +11,7 @@
     <title>Panier</title>
 </head>
 
-< class="hero is-fullheight">
+<body class="hero is-fullheight">
     <nav class="navbar has-background-success is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="index.html">
@@ -78,7 +78,226 @@
         </div>
     </nav>
 
-<main></main>
+    <main class="container" style="margin-top: 6rem;">
+        <div class="tabs is-centered">
+            <ul>
+                <li class="is-active"><a href="#commandes">Mes Commandes</a></li>
+                <li><a href="#informations">Mes Informations Personnelles</a></li>
+                <li><a href="#adresses">Mes Adresses</a></li>
+                <li><a href="#cartes">Modes de paiement</a></li>
+            </ul>
+        </div>
+        <div class="tab-content">
+            <div id="commandes">
+                <h2 class="subtitle">Mes Commandes</h2>
+                <table class="table is-fullwidth">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Date</th>
+                            <th>Statut</th>
+                            <th>Total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12345</td>
+                            <td>01/01/2023</td>
+                            <td>Expédiée</td>
+                            <td>50,00 €</td>
+                            <td><a href="#">Voir la Commande</a></td>
+                        </tr>
+                        <tr>
+                            <td>12344</td>
+                            <td>01/01/2023</td>
+                            <td>En Attente</td>
+                            <td>100,00 €</td>
+                            <td><a href="#">Voir la Commande</a></td>
+                        </tr>
+                        <tr>
+                            <td>12343</td>
+                            <td>01/01/2023</td>
+                            <td>Annulée</td>
+                            <td>20,00 €</td>
+                            <td><a href="#">Voir la Commande</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="informations" style="display: none;">
+                <h2 class="subtitle">Mes Informations Personnelles</h2>
+                <form>
+                    <div class="field">
+                        <label class="label">Nom</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="text" placeholder="Nom" value="Dunord">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Prénom</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="text" placeholder="Prénom" value="Kévin">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="email" placeholder="Email input" value="Kevinlebgdu59@gmail.com">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Mot de passe</label>
+                        <div class="control has-icons-left">
+                            <input class="input" type="password" placeholder="Mot de passe" value="************">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-lock"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field is-grouped">
+                        <div class="control">
+                            <button class="button is-link">Modifier mes informations</button>
+                        </div>
+                        <div class="control">
+                            <button class="button is-link is-light">Annuler</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div id="adresses" style="display: none;">
+                <h2 class="subtitle">Mes Adresses</h2>
+                <div class="columns">
+                    <div class="column">
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Adresse 1
+                                </p>
+                            </header>
+                            <div class="card-content is-half">
+                                <div class="content">
+                                    <p>Nom : Dunord Kévin</p>
+                                    <p>Adresse : 123 Rue des génies</p>
+                                    <p>Ville : Denain</p>
+                                    <p>Code Postal : 59220</p>
+                                    <p>Pays : France</p>
+                                </div>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item">Modifier</a>
+                                <a href="#" class="supprimer card-footer-item">Supprimer</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Adresse 2
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <div class="content">
+                                    <p>Nom : Dunord Kévin</p>
+                                    <p>Adresse : 493 Rue Jean paulo</p>
+                                    <p>Ville : Prouvy</p>
+                                    <p>Code Postal : 59121</p>
+                                    <p>Pays : France</p>
+                                </div>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item">Modifier</a>
+                                <a href="#" class="supprimer card-footer-item">Supprimer</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Ajouter Adresse
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <div class="content">
+                                    <p>Cliquez sur le bouton ci-dessous pour ajouter une nouvelle adresse.</p>
+                                </div>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item is-primary">Ajouter</a>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cartes" style="display: none;">
+                <h2 class="subtitle">Modes de paiement</h2>
+                <div class="columns">
+                    <div class="column">
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Carte 1
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <div class="content">
+                                    <p>Nom : Dunord Kévin</p>
+                                    <p>Numéro de carte : **** **** **** 1234</p>
+                                    <p>Date d'expiration : 02/24</p>
+                                </div>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item">Modifier</a>
+                                <a href="#" class="supprimer card-footer-item">Supprimer</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Carte 2
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <div class="content">
+                                    <p>Nom : Dunord Kévin</p>
+                                    <p>Numéro de carte : **** **** **** 5678</p>
+                                    <p>Date d'expiration : 06/25</p>
+                                </div>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item">Modifier</a>
+                                <a href="#" class="supprimer card-footer-item">Supprimer</a>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="has-text-centered is-fixed-bottom">
+        <p>
+            &copy;Gépadidé 2004-2023 | France
+        </p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
