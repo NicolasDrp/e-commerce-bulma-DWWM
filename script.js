@@ -19,3 +19,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   
   });
+
+
+
+  function promo() {
+    alert("On fait pas de promo ici !!");
+  }
+
+
+
+  // Sélectionne tous les boutons "Supprimer"
+const deleteButtons = document.querySelectorAll('#supprimer');
+
+// Ajoute un gestionnaire d'événements click à chaque bouton
+deleteButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Trouve la ligne parente du bouton supprimé
+    const article = button.parentNode.parentNode;
+
+    // Supprime la ligne de la table
+    article.remove();
+  });
+});

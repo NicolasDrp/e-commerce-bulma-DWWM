@@ -36,7 +36,7 @@
                     Produits
                 </a>
 
-                <a class="navbar-item has-text-white is-size-5">
+                <a class="navbar-item has-text-white is-size-5" onclick="promo()">
                     Promotions
                 </a>
 
@@ -78,8 +78,89 @@
         </div>
     </nav>
 
-    <main>
+    <main class="container" style="margin-top: 6rem;">
+        <h1 class="title is-1">Mon Panier</h1>
 
+        <div class="columns">
+            <div class="column is-three-quarters">
+                <table class="table is-fullwidth">
+                    <thead>
+                        <tr>
+                            <th>Produit</th>
+                            <th>Prix</th>
+                            <th>Quantité</th>
+                            <th>Total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>Nom du produit</p>
+                                <p class="subtitle">Description du produit</p>
+                            </td>
+                            <td>100€</td>
+                            <td>
+                                <input type="number" value="1" class="input">
+                            </td>
+                            <td>100€</td>
+                            <td>
+                                <button class="button is-danger is-small " id="supprimer"><i
+                                        class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Nom du produit</p>
+                                <p class="subtitle">Description du produit</p>
+                            </td>
+                            <td>50€</td>
+                            <td>
+                                <input type="number" value="2" class="input">
+                            </td>
+                            <td>100€</td>
+                            <td>
+                                <button class="button is-danger is-small" id="supprimer"><i
+                                        class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <a href="index.html" class="button is-primary">Continuer vos achats</a>
+
+            </div>
+
+            <div class="column is-two-fifths">
+                <div class="card">
+                    <div class="card-content">
+                        <p class="subtitle is-5">Récapitulatif de la commande</p>
+
+                        <table class="table is-fullwidth">
+                            <tbody>
+                                <tr>
+                                    <th>Sous-total</th>
+                                    <td>200€</td>
+                                </tr>
+                                <tr>
+                                    <th>Livraison</th>
+                                    <td>14€</td>
+                                </tr>
+                                <tr>
+                                    <th>Total</th>
+                                    <td>214€</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <a href="#" class="button is-success is-fullwidth">Passer commande</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
 
